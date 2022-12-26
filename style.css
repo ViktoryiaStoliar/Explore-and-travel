@@ -28,7 +28,7 @@
   src: url(./fonts/PlayfairDisplay-Bold.ttf) format("truetype");
   font-weight: 700;
 }
-.travel, .prewiew, header nav, header {
+footer .grid-footer, footer .footer-info, .travel, .prewiew, header nav, header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,4 +211,44 @@ header nav .register-btn {
   text-align: center;
   padding: 15px 0;
   font: 600 16px "Inter";
+}
+
+footer {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .ts {
+  width: 400px;
+  margin-right: 100px;
+}
+footer .ts .img-footer {
+  background-image: url(./assets/footer-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 44px;
+  height: 37px;
+  margin-bottom: 20px;
+}
+footer .ts p {
+  font: 300 18px "Inter";
+  color: #848484;
+  margin-bottom: 10px;
+}
+footer .grid-footer {
+  margin: auto;
+}
+footer .grid-footer div:not(:last-child) {
+  margin-right: 100px;
+}
+footer .grid-footer div h4 {
+  font: 700 19px "Inter";
+  color: #000000;
+  margin-bottom: 10px;
+}
+footer .grid-footer div p {
+  font: 300 18px "Inter";
+  color: #848484;
+  margin-bottom: 10px;
 }
