@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Light.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Medium.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/PlayfairDisplay-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+.travel, .prewiew, header nav, header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-style: normal;
+  font-family: "Inter";
+}
+
+body {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+header .img-logo {
+  background-image: url(./assets/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 41px;
+  height: 41px;
+}
+header nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav p {
+  margin-right: 35px;
+  font: 400 16px "Inter";
+  color: #B8BECD;
+}
+header nav p:hover {
+  font: 400 16px "Inter";
+  color: #202336;
+}
+header nav div:not(:last-child) {
+  margin-right: 18px;
+}
+header nav .login-btn {
+  border: 1px solid #FB8F1D;
+  border-radius: 8px;
+  color: #FB8F1D;
+  padding: 8px 36px;
+  font: 500 15p "Inter";
+}
+header nav .register-btn {
+  background: #FB8F1D;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 36px;
+  font: 500 15p "Inter";
+}
+
+.prewiew {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+.prewiew .travel-form {
+  width: 500px;
+}
+.prewiew .travel-form h1 {
+  font: 700 64px "Playfair Display";
+  color: #202336;
+}
+.prewiew .travel-form p {
+  font: 600 22px "Inter";
+  color: #202336;
+  margin: 50px 0;
+}
+.prewiew .travel-form .inputs-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.prewiew .travel-form .inputs-form div:not(:last-child) {
+  margin-right: 20px;
+}
+.prewiew .travel-form .inputs-form div {
+  margin-bottom: 30px;
+}
+.prewiew .travel-form .inputs-form div:not(:last-child) {
+  margin-right: 20px;
+}
+.prewiew .travel-form .inputs-form input {
+  width: 220px;
+  height: 52px;
+  border: 0.8px solid #B8BECD;
+  border-radius: 6px;
+  padding-left: 30px;
+  outline: none;
+}
+.prewiew .travel-form .inputs-form input::-webkit-input-placeholder {
+  font: 400 15px "Inter";
+  color: #AFB0B9;
+}
+.prewiew .travel-form .inputs-form input::-moz-placeholder {
+  font: 400 15px "Inter";
+  color: #AFB0B9;
+}
+.prewiew .travel-form .inputs-form input:-ms-input-placeholder {
+  font: 400 15px "Inter";
+  color: #AFB0B9;
+}
+.prewiew .travel-form .inputs-form input::-ms-input-placeholder {
+  font: 400 15px "Inter";
+  color: #AFB0B9;
+}
+.prewiew .travel-form .inputs-form input::placeholder {
+  font: 400 15px "Inter";
+  color: #AFB0B9;
+}
+.prewiew .travel-form .btn {
+  background: #FB8F1D;
+  border-radius: 8px;
+  width: 180px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font: 700 17px "Inter";
+}
+.prewiew .img-travel {
+  background-image: url(./assets/thousand-01\ 1.svg);
+  width: 506px;
+  height: 483px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.travel {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+.travel .img-fly {
+  background-image: url(./assets/Thousand-02\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 659px;
+  height: 534px;
+}
+.travel .learn {
+  width: 450px;
+}
+.travel .learn h2 {
+  font: 700 36px "Playfair Display";
+  color: #000000;
+  margin-bottom: 20px;
+}
+.travel .learn p {
+  font: 300 17px "Inter";
+  color: #7D7987;
+  margin-bottom: 33px;
+}
+.travel .learn .btn {
+  background: #FB8F1D;
+  border-radius: 8px;
+  width: 164px;
+  height: 48px;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font: 600 16px "Inter";
+}

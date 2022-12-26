@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/PlayfairDisplay-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+$white-color: #ffff;
+$orange-color: #FB8F1D;
+$grey-color: #B8BECD;
+$black-color: #202336;
+$darkgrey-color: #AFB0B9;
+$blackblack-color: #000000;
+$greygrey-color: #7D7987;
+$lightgrey-color: #848484;
+
+%flex-spb {
+    display: flex;
+    justify-content: space-between;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Inter';
+}
+
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    @extend %flex-spb;
+    align-items: center;
+    padding: 10px 0;
+
+    .img-logo {
+        background-image: url(./assets/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 41px;
+        height: 41px;
+    }
+
+    nav {
+        @extend %flex-spb;
+        align-items: center;
+
+        p {
+            margin-right: 35px;
+            font: 400 16px 'Inter';
+            color: $grey-color;
+
+            &:hover {
+                font: 400 16px 'Inter';
+                color: $black-color;
+            }
+        }
+
+        div:not(:last-child) {
+            margin-right: 18px;
+        }
+
+        .login-btn {
+            border: 1px solid $orange-color;
+            border-radius: 8px;
+            // width: 132px;
+            // height: 44px;
+            color: $orange-color;
+            // padding-top: 10px;
+            // text-align: center;
+            padding: 8px 36px;
+            font: 500 15p 'Inter';
+        }
+
+        .register-btn {
+            background: $orange-color;
+            border-radius: 8px;
+            // width: 132px;
+            // height: 44px;
+            color: $white-color;
+            // padding-top: 10px;
+            // text-align: center;
+            padding: 8px 36px;
+            font: 500 15p 'Inter';
+        }
+    }
+}
+
+.prewiew {
+    @extend %flex-spb;
+    align-items: center;
+    margin-top: 100px;
+
+    .travel-form {
+        width: 500px;
+
+        h1 {
+            font: 700 64px 'Playfair Display';
+            color: $black-color;
+        }
+
+        p {
+            font: 600 22px 'Inter';
+            color: $black-color;
+            margin: 50px 0;
+        }
+
+        .inputs-form {
+            display: flex;
+            flex-wrap: wrap;
+
+            div:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            div {
+                margin-bottom: 30px;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+
+            input {
+                width: 220px;
+                height: 52px;
+                border: 0.8px solid $grey-color;
+                border-radius: 6px;
+                padding-left: 30px;
+                outline: none;
+
+                &::placeholder {
+                    font: 400 15px 'Inter';
+                    color: $darkgrey-color;
+                }
+            }
+        }
+
+        .btn {
+            background: $orange-color;
+            border-radius: 8px;
+            width: 180px;
+            height: 50px;
+            color: $white-color;
+            text-align: center;
+            padding: 15px 0;
+            font: 700 17px 'Inter';
+        }
+    }
+
+    .img-travel {
+        background-image: url(./assets/thousand-01\ 1.svg);
+        width: 506px;
+        height: 483px;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+}
+
+.travel {
+    @extend %flex-spb;
+    align-items: center;
+    margin-top: 100px;
+
+    .img-fly {
+        background-image: url(./assets/Thousand-02\ 1.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 659px;
+        height: 534px;
+    }
+
+    .learn {
+        width: 450px;
+
+        h2 {
+            font: 700 36px 'Playfair Display';
+            color: $blackblack-color;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font: 300 17px 'Inter';
+            color: $greygrey-color;
+            margin-bottom: 33px;
+        }
+
+        .btn {
+            background: $orange-color;
+            border-radius: 8px;
+            width: 164px;
+            height: 48px;
+            color: $white-color;
+            text-align: center;
+            padding: 15px 0;
+            font: 600 16px 'Inter';
+        }
+    }
+}
+
+footer {
+    
+}
